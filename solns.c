@@ -1,6 +1,5 @@
 /* Enter your solutions in this file */
 #include<stdio.h>
-#include<cs50.h>
 int n;int i;
 int max(int a[n],int n);
 int main(void){
