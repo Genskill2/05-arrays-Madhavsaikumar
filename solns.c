@@ -15,6 +15,10 @@ int max(int a[n],int n);
 int main(void){
 int a[n];int max；
 int max(int [], int);
+n = get_int("enter the total elements of array");
+for(i=0;i<n;i++){
+a[i] = get_int("enter the %i number",i+1);
+}
 max = a[0];
 for(i=1;i<n;i++){
 if(a[i]>max){
