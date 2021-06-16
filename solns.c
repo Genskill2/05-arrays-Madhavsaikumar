@@ -1,19 +1,23 @@
 /* Enter your solutions in this file */
 #include<stdio.h>
-int min(int[ ],int);
+int max(int a[ ], int n)
+{
+    int i;
+    
+    int max = arr[0];
+ 
+    for (i = 1; i < n; i++){
+        if (arr[i] > max){
+            max = arr[i];
+ }
+ }
+ return max;
+}
+ 
 int main(void)
 {
-int x[ ]={5};
-printf("%i",min(x,1));
-}
-int min(int a[ ],int n)
-{
-    int mi=a[0];
-    for(int i=0;i<n;i++)
-    {
-        if(a[i]<mi){
-            mi=a[i];
-    }
-    }
-return mi;
+    int a[ ] = {10, 324, 45, 90, 9808};
+    int n = sizeof(a)/sizeof(a[0]);
+    printf("Maximum integer in given array is %d", max(a, n));
+    return 0;
 }
